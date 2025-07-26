@@ -14,7 +14,7 @@
     --text-and-bg-color-ash: rgb(114, 114, 114);
     --primary-color: rgb(255, 144, 14);
     --background-color: rgba(255, 144, 14, 0.1);
-    --hero-font-size: 4rem;
+    --hero-font-size: clamp(2rem, 2.5vw, 2rem);
     --hero-font-weight: 700;
     --nav-font-size: 1.125rem;
     --nav-font-weight: 500;
@@ -36,10 +36,11 @@
     cursor: pointer;
 }
 .nav__container{
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 10rem;
+    padding: clamp( 6rem, calc(4vw + 1rem), 12rem ) clamp( 6rem, 6rem, 12rem );
 }
 .nav__links{
     display: flex;
