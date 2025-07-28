@@ -1,47 +1,71 @@
 /* mobile nav media */
 @media screen and (min-width: 900px) and (max-width: 4000px) {
-    .mobile__nav{
-        display: none;
-    }
+  .mobile__nav {
+    display: none;
+  }
 }
 @media screen and (min-width: 300px) and (max-width: 900px) {
-    .nav__container{
-        padding: clamp(1rem, 5vw, 3rem);
-    }
-    .menu{
-        display: none;
-    }
-    .burger__menu img{
-        width: clamp(3rem, 5vw, 6rem);
-        height: clamp(3rem, 5vw, 6rem);
-    }
-    .mobile__nav{
-        position: relative;
-    }
-    .burger__menu > ul {
-        flex-direction: column;
-        gap: .625rem;
-        justify-content: center;
-        position: absolute;
-        top: 4rem;
-        right: .500rem;
-        background: var(--primary-color);
-        padding: clamp(1rem, 50vw, 2rem) clamp(6rem, 50vw, 4rem);
-        border-radius: 5px;
-        display: none;
-    }
-    .burger__menu:hover ul{
-        display: flex;
-        z-index: 1;
-    }
-    .burger__menu > ul > li {
-        width: 100%;
-        text-align: right;
-        padding: 1.25rem 0;
-    }
-    .burger__menu > ul > li > a{
-        color: var(--text-and-bg-color-white);
-        font-size: var(--nav-font-size);
-        font-weight: var(--nav-font-weight);
-    }
+  /* nav media */
+  .nav__container {
+    padding: clamp(1rem, 5vw, 3rem);
+  }
+  .menu {
+    display: none;
+  }
+  .burger__menu img {
+    width: clamp(3rem, 5vw, 6rem);
+    height: clamp(3rem, 5vw, 6rem);
+  }
+  .mobile__nav {
+    position: relative;
+  }
+  .burger__menu > ul {
+    flex-direction: column;
+    gap: 0.625rem;
+    justify-content: center;
+    position: absolute;
+    top: 4rem;
+    right: 0.5rem;
+    background: var(--primary-color);
+    padding: clamp(1rem, 50vw, 2rem) clamp(6rem, 50vw, 4rem);
+    border-radius: 5px;
+    display: none;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  .burger__menu:hover ul {
+    display: flex;
+    z-index: 1;
+  }
+  .burger__menu > ul > li {
+    width: 100%;
+    text-align: right;
+    padding: 1.25rem 0;
+  }
+  .burger__menu > ul > li > a {
+    color: var(--text-and-bg-color-white);
+    font-size: var(--nav-font-size);
+    font-weight: var(--nav-font-weight);
+  }
+  /* banner media */
+  main {
+    padding: clamp(1rem, 5vw, 3rem);
+  }
+  .hero__container {
+    padding: 0 1rem 2.875rem 1rem;
+  }
+  .hero__banner {
+    margin-top: 20px;
+  }
+  /* features media */
+  
+  .image__grid {
+    text-align: center;
+  }
+  .features__container {
+    flex-direction: column;
+  }
+  .right__content {
+    margin-top: 1.25rem;
+    text-align: center;
+  }
 }
