@@ -14,6 +14,9 @@ footer {
 main section {
   margin-top: min(4vh);
 }
+footer {
+  margin-top: min(15vh);
+}
 a {
   text-decoration: none;
   color: var(--text-and-bg-color-white);
@@ -217,10 +220,42 @@ header {
   margin-top: 10vh;
 }
 .card__facts {
+  overflow: hidden;
   width: 15rem;
   height: 15rem;
   border: 1px solid rgb(255, 144, 14);
   border-radius: 8px;
   text-align: center;
   padding: clamp(2.8125rem, calc(1rem + 2.5vw), 3rem);
+}
+/* our sponsors styles */
+.sponsors__container {
+  margin-top: 15vh;
+  text-align: center;
+}
+.sponsors__gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sponsors__gallery img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.sponsors__gallery img:hover {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease;
+}
+/* footer styles */
+footer {
+  background: var(--background-color);
+  padding: clamp(2rem, calc(1rem + 2.5vw), 4rem);
+}
+footer > h3 {
+  font-size: clamp(1rem, calc(0.5rem + 2.5vw), 1.2rem);
+  font-weight: 400;
+  color: var(--text-and-bg-color-ash);
 }

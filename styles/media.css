@@ -99,7 +99,12 @@
     flex-wrap: wrap;
     gap: 20px;
   }
-  .facts__head{
+  .facts__head {
     text-align: center;
+  }
+  /* sponsor media */
+  .sponsors__gallery {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
