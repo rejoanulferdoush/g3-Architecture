@@ -149,7 +149,7 @@ header {
   align-items: center;
   gap: 1.5rem;
 }
-.image__grid{
+.image__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -176,10 +176,10 @@ header {
   border-radius: 8px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
-.offer__left{
+.offer__left {
   width: 40%;
 }
-.offer__right{
+.offer__right {
   width: 50%;
   position: relative;
 }
@@ -192,7 +192,7 @@ header {
   background-size: cover;
   object-fit: cover;
 }
-.big__badge{
+.big__badge {
   background-color: var(--primary-color);
   padding: 1.5rem;
   text-align: center;
@@ -202,7 +202,25 @@ header {
   border-radius: 8px;
   color: var(--text-and-bg-color-white);
 }
-.years{
+.years {
   font-size: clamp(1.5rem, calc(1rem + 2vw), 3rem);
   font-weight: 600;
+}
+/* some fact section */
+.facts__container {
+  margin-top: 15vh;
+}
+.fact__card--container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10vh;
+}
+.card__facts {
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  text-align: center;
+  padding: clamp(2.8125rem, calc(1rem + 2.5vw), 3rem);
 }

@@ -91,4 +91,15 @@
     bottom: 2rem;
     left: 40%;
   }
+  /* some facts media */
+  .facts__container {
+    margin-top: 10vh;
+  }
+  .fact__card--container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .facts__head{
+    text-align: center;
+  }
 }
